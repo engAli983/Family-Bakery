@@ -19,7 +19,6 @@ body {
 html,
 body {
   width: 100%;
-  position: relative;
   overflow-x: hidden;
 }
 /* Media Query */
