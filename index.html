@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Engage bakery</title>
-    <link rel="icon" href="image/favicon.png" type="image/png" />
+    <link rel="icon" href="image/favicon.webp" type="image/png" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -21,9 +21,18 @@
     <header class="header" id="header">
       <div class="container">
         <a href="#" class="logo">
-          <img src="image/bakery-light-1.png" alt="Engage Bakery Logo" />
+          <img
+            src="image/bakery-light-1.webp"
+            alt="Engage Bakery Logo"
+            loading="eager"
+          />
         </a>
-        <button class="toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <button
+          class="toggle"
+          id="menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="nav-overlay" id="nav-overlay"></div>
@@ -34,7 +43,9 @@
             <li><a href="#">Our Offer</a></li>
             <li><a href="#">Gallery</a></li>
             <li class="has-submenu">
-              <a href="#">Blog <i class="fa-solid fa-chevron-down caret"></i></a>
+              <a href="#"
+                >Blog <i class="fa-solid fa-chevron-down caret"></i
+              ></a>
               <ul class="sub-menu">
                 <li><a href="#">Blog Index</a></li>
                 <li><a href="#">Simple Post</a></li>
@@ -69,7 +80,11 @@
     <section class="about-section" id="about-section">
       <div class="container">
         <div class="left hidden-element">
-          <img src="image/alexandru-stavrica-170390-800x760.jpg" alt="" />
+          <img
+            src="image/alexandru-stavrica-170390-800x760.webp"
+            alt=""
+            loading="lazy"
+          />
         </div>
         <div class="right hidden-element">
           <h2>Our Passion for Dough</h2>
@@ -121,7 +136,11 @@
         </div>
 
         <div class="right hidden-element">
-          <img src="image/full-2-800x640.jpg" alt="Bakery Interior" />
+          <img
+            src="image/full-2-800x640.webp"
+            alt="Bakery Interior"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
@@ -139,8 +158,9 @@
             <div class="card-image">
               <span class="price-tag">$5.00</span>
               <img
-                src="image/ben-garratt-134774-600x500.jpg"
+                src="image/ben-garratt-134774-600x500.webp"
                 alt="Superior Breads"
+                loading="lazy"
               />
             </div>
             <div class="card-details">
@@ -155,7 +175,11 @@
           <div class="baking-card hidden-element">
             <div class="card-image">
               <span class="price-tag">$5.00</span>
-              <img src="image/stas-ovsky-123540-600x500.jpg" alt="Bagels" />
+              <img
+                src="image/stas-ovsky-123540-600x500.webp"
+                alt="Bagels"
+                loading="lazy"
+              />
             </div>
             <div class="card-details">
               <h3>NYC Style Bagels</h3>
@@ -170,8 +194,9 @@
             <div class="card-image">
               <span class="price-tag">$5.00</span>
               <img
-                src="image/clem-onojeghuo-206832-600x500.jpg"
+                src="image/clem-onojeghuo-206832-600x500.webp"
                 alt="Cookies"
+                loading="lazy"
               />
             </div>
             <div class="card-details">
@@ -300,9 +325,10 @@
       <section class="bottom-footer">
         <div class="container">
           <img
-            src="image/bakery-light-1.png"
+            src="image/bakery-light-1.webp"
             alt="Bakery Logo"
             class="footer-logo"
+            loading="lazy"
           />
           <p>&copy; 2026 Family Bakery. All rights reserved.</p>
           <ul class="social-media">
@@ -329,7 +355,7 @@
         <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
 
         <div class="modal-image">
-          <img id="modal-img" src="" alt="Product Image" />
+          <img id="modal-img" src="" alt="Product Image" loading="lazy" />
         </div>
 
         <div class="modal-info">

@@ -63,7 +63,10 @@ header {
   width: 100%;
   z-index: 1000;
   background-color: transparent;
-  transition: background-color 0.4s ease, box-shadow 0.4s ease, padding 0.3s ease;
+  transition:
+    background-color 0.4s ease,
+    box-shadow 0.4s ease,
+    padding 0.3s ease;
 }
 header.scrolled {
   position: fixed;
@@ -101,7 +104,9 @@ header .toggle {
   cursor: pointer;
   padding: 8px;
   border-radius: 6px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
   z-index: 1100;
   position: relative;
 }
@@ -201,7 +206,10 @@ header nav .main-nav .sub-menu {
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
 }
 header nav .main-nav .sub-menu::before {
   content: "";
@@ -240,7 +248,7 @@ header nav .main-nav .sub-menu li > a:hover {
 .landing {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../image/drew-coffman-1872.jpg");
+    url("../image/drew-coffman-1872.webp");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -745,6 +753,7 @@ footer .main-footer .container .footer-col ul li {
   display: flex;
   align-items: flex-start;
   padding-bottom: 18px;
+  cursor: pointer;
 }
 footer .main-footer .container .footer-col ul li:not(:last-child) {
   border-bottom: 1px solid #b3b3b330;
