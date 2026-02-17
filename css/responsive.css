@@ -150,10 +150,7 @@
     max-width: 440px;
   }
   .about-section .container .left::before {
-    top: 13px;
-    left: 13px;
-    width: 83%;
-    height: 84%;
+    display: none;
   }
 
   /* Location */
