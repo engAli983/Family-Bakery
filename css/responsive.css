@@ -1,0 +1,205 @@
+@media (max-width: 991px) {
+  /* Header Toggle */
+  header .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile Nav */
+  header nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 100vh;
+    background-color: #3a3733;
+    z-index: 1050;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 80px;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.3);
+  }
+  header nav.active {
+    right: 0;
+  }
+
+  header nav .main-nav {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    gap: 0;
+    align-items: stretch;
+  }
+  header nav .main-nav li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  header nav .main-nav li a {
+    padding: 14px 25px;
+    font-size: 16px;
+    transition:
+      background-color 0.3s ease,
+      padding-left 0.3s ease;
+  }
+  header nav .main-nav li a::after {
+    display: none;
+  }
+  header nav .main-nav li a:hover,
+  header nav .main-nav li a.active {
+    background-color: rgba(224, 198, 121, 0.1);
+    padding-left: 32px;
+  }
+
+  /* Mobile Sub-menu */
+  header nav .main-nav .sub-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    min-width: auto;
+  }
+  header nav .main-nav .sub-menu::before {
+    display: none;
+  }
+  .has-submenu.open > .sub-menu {
+    max-height: 300px;
+  }
+  header nav .main-nav .sub-menu li {
+    width: 100%;
+    border-bottom: none;
+  }
+  header nav .main-nav .sub-menu li a {
+    padding: 12px 25px 12px 40px;
+    font-size: 14px;
+    color: #aaa;
+  }
+  header nav .main-nav .sub-menu li a:hover {
+    color: var(--second-color);
+    background-color: rgba(224, 198, 121, 0.08);
+    padding-left: 45px;
+  }
+
+  /* About */
+  .about-section .container {
+    justify-content: center;
+    gap: 35px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Location */
+  .location-section .container {
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  /* Contact */
+  .contact .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact-information p {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .contact .contact-information h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .contact .contact-location iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Mobile Nav full width */
+  header nav {
+    width: 100%;
+    right: -100%;
+  }
+
+  /* Landing */
+  .landing .text .Welcome {
+    margin-bottom: 8px;
+  }
+  .landing .text h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .landing .text .about {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  /* About */
+  .about-section .container .left img {
+    width: 100%;
+    max-width: 440px;
+  }
+  .about-section .container .left::before {
+    top: 13px;
+    left: 13px;
+    width: 83%;
+    height: 84%;
+  }
+
+  /* Location */
+  .location-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  /* Baking */
+  .baking-section {
+    padding: 55px 20px;
+  }
+  .baking-section .container .section-title {
+    margin-bottom: 19px;
+  }
+  .baking-section .container .our-baking {
+    flex-direction: column;
+    align-items: center;
+  }
+  .baking-section .container .section-subtitle {
+    margin-bottom: 40px;
+  }
+  .baking-section .container .our-baking .baking-card {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+  .baking-section .container .our-baking .baking-card h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .baking-section .container .our-baking .baking-card p {
+    text-align: justify;
+  }
+
+  .contact .contact-location .map {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing .text h2 {
+    font-size: 38px;
+  }
+  .landing .text .btns .btn {
+    padding: 12px 16px;
+    font-size: 15px;
+  }
+}
